@@ -45,16 +45,14 @@ main{
   flex-direction:column;
   justify-content:flex-start;
   align-items: center;
-  width:210px;
-  height: 310px;
-  margin-left: 15px;
+  width:150px;
+  height: 250px;
   margin-right: 5px;
   margin-top: 30px;
   font-family:"Roboto Regular";
   background-color:white;
   border-radius:20px;
   box-shadow:0 0 8px grey; 
-  box-sizing:border-box;
   padding: 0 20px;
   transition: transform 1s;
 }
@@ -64,11 +62,11 @@ main{
 }
 
 #texto{
-  font-size:1rem;
-  align-self:baseline;
-  font-weight:600;
   position:relative;
-  top:20px;
+  font-size:0.8rem;
+  font-weight:600;
+  margin:0;
+  top:15px;
 }
 
 #dolar, #precio{
@@ -80,7 +78,6 @@ main{
 
 #precios{
   position:relative;
-  align-self:baseline;
   background-image: linear-gradient(135deg, rgba(64, 232, 255, 0.60) 0%, rgba(255, 0, 252, 0.55) 100%);
   width:80px;
   height:50px;
@@ -90,6 +87,8 @@ main{
   border-radius:20px;
   color:white;
   text-shadow:1px 1px 2px black;
+  right:25%;
+  top:10%;
 }
 
 #img_container{
@@ -101,7 +100,7 @@ main{
 
 #descripcion{
   box-sizing:border-box;
-  font-size:0.8rem;
+  font-size:0.7rem;
   margin:0;
   position:relative;
   bottom:10px;
@@ -111,8 +110,7 @@ main{
 }
 
 svg{
-    width:100px;
-    align-self:center;
+    width:80px;
 }
 
 
@@ -125,12 +123,10 @@ svg{
   justify-content:center;
   border:none;
   position:relative;
-  align-self:flex-end;
   width: 50px;
   background-color:transparent;
-  justify-self:flex-end;
-  bottom:20%;
-  right:5px;
+  bottom:8%;
+  left:50%;
   transition: fill .2s linear,
 }
 
@@ -174,33 +170,19 @@ header{
   width:210px;
 }
 
-h1{
-  margin:0;
-  justify-self:center;
-  font-size:2rem;
-  position:relative;
-  top:20px;
-  width:200px;
-}
-
-p{
-  margin:0;
-  position:relative;
-  top:30px;
-  width:200px;
-}
 
 #chica{
-  width:80px;
+  width:100px;
   position:relative;
-  left:80px;
-  top:38px;
+  left:55%;
+  bottom:14%;
+  right:20%;
   
 }
 
 #chico{
-  width:80px;
+  width:100px;
   position:relative;
-  left:150px;
-  bottom:40px;  
+  left:75%;
+  bottom:100px;  
 }
