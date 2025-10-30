@@ -24,6 +24,7 @@ body {
 }
 
 .h1{
+  font-family:"Roboto Regular";
   justify-self:center; 
   width:100%;
   font-size:1.4rem;

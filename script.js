@@ -72,7 +72,7 @@ const sudadera = new Franela(
 
 const algodon = new Franela(
   "Franela Básica",
-  3.99,
+  4.99,
   "Franela de excelente calidad hecha con algodon",
   "./images/franela1.png",
   mi_inventario,
@@ -96,15 +96,15 @@ const chemise = new Franela(
 
 const bolso = new Franela(
   "Bolso",
-  2.99,
+  20.99,
   "Bolso grande y acolchado resistente al agua",
   "./images/bolso.png",
   mi_inventario,
 );
 
 const termo = new Franela(
-  "Termo Acero UNESR",
-  5.99,
+  "Termo Acero",
+  1.99,
   "Mantiene bebidas a la temperatura ideal",
   "./images/termo1.png",
   mi_inventario,
@@ -112,7 +112,7 @@ const termo = new Franela(
 
 const software = new Franela(
   "Licencia de Microsoft Office",
-  15.99,
+  5.99,
   "Acceso anual a suite professional",
   "./images/office.png",
   mi_inventario,
@@ -120,11 +120,29 @@ const software = new Franela(
 
 const gorra = new Franela(
   "Gorra Básica",
-  15.99,
+  6.99,
   "Gorra personalizada para protección solar",
   "./images/gorra1.png",
   mi_inventario,
 );
+
+const mujer = new Franela(
+  "Franela Rosa",
+  6.99,
+  "Franela personalizada para dama",
+  "./images/franela3.png",
+  mi_inventario,
+);
+
+const libreta = new Franela(
+  "Libreta",
+  1.99,
+  "Libreta personalizada de seis materias",
+  "./images/librete.png",
+  mi_inventario,
+);
+
+
 
 console.log(mi_inventario.productos.length);
 
