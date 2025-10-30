@@ -29,7 +29,6 @@ body {
   font-size:1.4rem;
   font-weight: 600;
   margin-left: 20px;
-  padding-top:50px;
  
 }
 
@@ -256,3 +255,52 @@ nav{
     }
   }
 
+#cashea{
+  display:flex;
+  position:relative;
+  left:14px;
+  flex-direction:row;
+  background-color:yellow;
+  width:45px;
+  border-radius:20px;
+  margin-top:12px;
+  transition:width 0.7s ease;
+  img{
+    position:relative;
+    right:8px;
+    height:40px;
+    transition:transform 0.7s;
+  }
+}
+
+
+#cashea_container p{
+  width:200px;
+  font-family:"Roboto Regular";
+  font-size:1rem;
+  max-height:10px;
+  position:relative;
+  bottom:46px;
+  left:58px;
+  font-weight:600;
+  opacity:0;
+  max-height:0;
+  transition: all .1s ease 0s;
+}
+
+
+#cashea_container:hover{
+
+  #cashea{
+    width:230px;
+  }
+  img{
+    transform: rotate(760deg);
+  }
+  p{
+    max-height:100px;
+    opacity:1;
+    transition: all 1s ease 0.2s;
+  }
+  
+}
