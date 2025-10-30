@@ -73,7 +73,7 @@ const alicrada = new Franela(
 const algodon = new Franela(
   "Cuello Ancho",
   3.99,
-  "Franela de excelente calidad hecha con algodon 100% de calidad",
+  "Franela de excelente calidad hecha con algodon",
   "blanco",
   mi_inventario,
 );
@@ -81,7 +81,7 @@ const algodon = new Franela(
 const camisa = new Franela(
   "Manga Larga",
   10.99,
-  "Camisa de vestir de color azul, perfecto para eventos formales",
+  "Camisa de vestir de color azul",
   "azul",
   mi_inventario,
 );
@@ -89,7 +89,7 @@ const camisa = new Franela(
 const franelilla = new Franela(
   "Franelilla",
   2.99,
-  "Franelilla de color blanca 100% de calidad, perfecta para días calurosos o hacer deporte",
+  "Franelilla de color blanca 100% de calidad",
   "blanco",
   mi_inventario,
 );
@@ -174,7 +174,7 @@ z"/>
 const get_elements = () => {
   let html = "";
   for (let i = 0; i < mi_inventario.productos.length; i++) {
-    let código = `<div class = "card"><div id="img_container">${svg}</div><p id="texto"><span id="titulo">${mi_inventario.productos[i].modelo}</span></span></p><p id="descripcion">${mi_inventario.productos[i].descripcion}</p><p id="precios"><span id="dolar">$</span><span id="precio">${mi_inventario.productos[i].precio}</span></p><button class="btn">${button}</button></div>`;
+    let código = `<div class = "card"><div id="img_container">${svg}</div><p id="texto"><span id="titulo">${mi_inventario.productos[i].modelo}</span></span></p><p id="descripcion">${mi_inventario.productos[i].descripcion}</p><p id="precios"><span id="dolar">$</span><span id="precio">${mi_inventario.productos[i].precio}</span></p><button class="btn">${button}</button><p id="carrito">🛒<p></div>`;
     html += código;
   }
   console.log(html);
