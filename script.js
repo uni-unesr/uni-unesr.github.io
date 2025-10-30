@@ -62,19 +62,19 @@ const mi_inventario = new Inventario();
 
 //Instanciando Objetos
 
-const alicrada = new Franela(
-  "Cuello Alto",
+const sudadera = new Franela(
+  "Sudadera",
   5.99,
-  "Franela de excelente calidad, hecha de tela alicrada",
-  "rojo",
+  "Sudadera excelente calidad, hecha de tela alicrada",
+  "./images/sudadera1.png",
   mi_inventario,
 );
 
 const algodon = new Franela(
-  "Cuello Ancho",
+  "Franela Básica",
   3.99,
   "Franela de excelente calidad hecha con algodon",
-  "blanco",
+  "./images/franela1.png",
   mi_inventario,
 );
 
@@ -82,31 +82,47 @@ const camisa = new Franela(
   "Manga Larga",
   10.99,
   "Camisa de vestir de color azul",
-  "azul",
+  "./images/camisa1.png",
   mi_inventario,
 );
 
-const franelilla = new Franela(
-  "Franelilla",
+const chemise = new Franela(
+  "Chemise",
+  10.99,
+  "Chemise azul de algodón",
+  "./images/camisa2.png",
+  mi_inventario,
+);
+
+const bolso = new Franela(
+  "Bolso",
   2.99,
-  "Franelilla de color blanca 100% de calidad",
-  "blanco",
+  "Bolso grande y acolchado resistente al agua",
+  "./images/bolso.png",
   mi_inventario,
 );
 
-const chaqueta = new Franela(
-  "Chaqueta",
+const termo = new Franela(
+  "Termo Acero UNESR",
   5.99,
-  "chaqueta perfecta para los días fríos",
-  "azul",
+  "Mantiene bebidas a la temperatura ideal",
+  "./images/termo1.png",
   mi_inventario,
 );
 
-const sueter = new Franela(
-  "Sueter",
+const software = new Franela(
+  "Licencia de Microsoft Office",
   15.99,
-  "Perffecto para combinar un outfit",
-  "verde",
+  "Acceso anual a suite professional",
+  "./images/office.png",
+  mi_inventario,
+);
+
+const gorra = new Franela(
+  "Gorra Básica",
+  15.99,
+  "Gorra personalizada para protección solar",
+  "./images/gorra1.png",
   mi_inventario,
 );
 
@@ -174,7 +190,7 @@ z"/>
 const get_elements = () => {
   let html = "";
   for (let i = 0; i < mi_inventario.productos.length; i++) {
-    let código = `<div class = "card"><div id="img_container">${svg}</div><p id="texto"><span id="titulo">${mi_inventario.productos[i].modelo}</span></span></p><p id="descripcion">${mi_inventario.productos[i].descripcion}</p><p id="precios"><span id="dolar">$</span><span id="precio">${mi_inventario.productos[i].precio}</span></p><button class="btn">${button}</button><p id="carrito">🛒<p></div>`;
+    let código = `<div class = "card"><div id="img_container"><img src=${mi_inventario.productos[i].color}></div><p id="texto"><span id="titulo">${mi_inventario.productos[i].modelo}</span></p><p id="descripcion">${mi_inventario.productos[i].descripcion}</p><p id="precios"><span id="dolar">$</span><span id="precio">${mi_inventario.productos[i].precio}</span></p><button class="btn">${button}</button><p id="carrito">🛒</p></div>`;
     html += código;
   }
   console.log(html);
